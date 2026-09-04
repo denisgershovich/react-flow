@@ -1,12 +1,15 @@
-import FlowComposer from './FlowComposer';
+import { ReactFlowProvider } from '@xyflow/react';
+import Flow from './Flow';
 
 const App = () => {
 
   return (
-    <main className="main" >
-      <h1>Composer UI</h1>
-      <FlowComposer />
-    </main>
+    <ReactFlowProvider>
+      <main className="main" >
+        <h1>Composer UI</h1>
+        <Flow />
+      </main>
+    </ReactFlowProvider>
   )
 }
 
